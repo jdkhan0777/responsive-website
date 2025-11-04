@@ -56,7 +56,7 @@ nav a:hover {
 
 /* left side */
 .hero-left {
-  background-image: url("./assets/Vector green.png");
+  background-image: url("assets/vector_green_right.png");
   background-repeat: no-repeat;
 }
 
@@ -109,7 +109,7 @@ nav a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .hero-right {
-  background-image: url(/assets/Vector\ red.png);
+  background-image: url("assets/vector_red.png");
   background-repeat: no-repeat;
 }
 
@@ -179,7 +179,7 @@ nav a:hover {
 } */
 
 .demo {
-  background-image: url(/assets/Vector\ red\ right.png);
+  background-image: url("assets/vector_red.png");
   background-repeat: no-repeat;
 
   > div {
@@ -232,7 +232,7 @@ nav a:hover {
 }
 
 .content .right {
-  background-image: url(/assets/vector\ green\ content.png);
+  background-image: url("assets/vector_green.png");
   background-repeat: no-repeat;
   position: relative;
   left: 20em;
