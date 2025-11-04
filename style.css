@@ -1,0 +1,401 @@
+body {
+  background-color: #f3f3f3;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  --text-color: #14b082;
+  --text-color-100: #ff8a8a;
+  /* padding: 0%;
+  margin: 0%; */
+}
+section + section {
+  border-top: 1px solid #e2e8f0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em;
+  border-bottom: 1px solid #e2e8f0;
+
+  button {
+    display: none;
+  }
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #14b082;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em;
+  margin: 0em;
+  flex-wrap: wrap;              /* ✅ allows wrapping */
+  justify-content: center;      /* centers cards horizontally */
+  gap: 2rem;                    /* adds spacing between cards */
+  padding: 4rem 1rem;
+}
+
+/* left side */
+.hero-left {
+  background-image: url("./assets/Vector green.png");
+  background-repeat: no-repeat;
+}
+
+.hero-left img {
+  width: 50em;
+  height: auto;
+}
+
+/* right side */
+.hero-right {
+  width: 35em;
+  height: 40rem;
+
+  display: flex;
+  flex-direction: column; /* stack list + text vertically */
+  align-items: flex-start; /* align to left */
+  gap: 0.1em; /* space between list and text */
+}
+
+/* list inside hero-right */
+.hero-right ul {
+  display: flex;
+  flex-direction: column; /* stack list vertically */
+  gap: 0.1em; /* reduce vertical gap */
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* text under list */
+.hero-right .bottom-text {
+  color: #333;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+/* button */
+.hero-right button {
+  background: #10b981; /* modern green */
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.8em;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.hero-right .button:hover {
+  background: #059669; /* darker green on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.hero-right {
+  background-image: url(/assets/Vector\ red.png);
+  background-repeat: no-repeat;
+}
+
+.brands-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0;
+  flex-wrap: wrap;              /* ✅ allows wrapping */
+  justify-content: center;      /* centers cards horizontally */
+  gap: 2rem;                    /* adds spacing between cards */
+  padding: 4rem 1rem;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
+
+  > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 22em;
+    gap: 1em;
+
+    > div:last-child {
+      display: flex;
+      gap: 1em;
+
+      > div {
+        display: flex;
+        gap: 1em;
+      }
+
+      strong:first-child {
+        font-size: 2em;
+        color: var(--text-color);
+      }
+    }
+  }
+
+  /* > div:last-child {
+        background: red;
+    } */
+}
+
+.pic-badge {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 18em;
+  left: -3em;
+  background-color: #14b082;
+  width: 6em;
+  height: auto;
+  border-radius: 2em;
+  padding: 1em 3em;
+  color: #ffffff;
+}
+/* .badge h1 {
+  font-weight: bold;
+  
+} */
+
+.demo {
+  background-image: url(/assets/Vector\ red\ right.png);
+  background-repeat: no-repeat;
+
+  > div {
+    padding: 3em;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+    }
+    h3 {
+      font-weight: 100;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .services {
+    /* display: flex; */
+    border-color: #10b981;
+
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+
+    li {
+      max-width: 20em;
+      padding: 1em;
+      text-align: center;
+      box-shadow: rgba(186, 184, 184, 0.2) 0px 2px 2px 2px;
+      border-radius: 0.5em;
+    }
+
+    /* justify-content: space-around; */
+    /* flex-direction: column;
+    align-items:center; */
+  }
+}
+.content {
+  display: flex;
+  padding: 0em;
+  margin: 0em;
+  
+  
+}
+
+.content .right {
+  background-image: url(/assets/vector\ green\ content.png);
+  background-repeat: no-repeat;
+  position: relative;
+  left: 20em;
+  /* border: 2px solid; */
+  /* .graph {
+    padding-top: 5em;
+    width: 35em;
+    /* position: absolute;
+    right: -25em; */
+}
+
+.content .left {
+  /* background-color: #059669; */
+  position: relative;
+  left: 10em;
+  top: 5em;
+  h1 {
+    width: 10em;
+  }
+
+  p {
+    width: 25em;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 0%;
+  }
+}
+
+/* section base (optional) */
+.process{
+  background:#4eb389;
+  color:#fff;
+  text-align:center;
+  padding:5em 2em;
+}
+
+/* was: process { green_top { ... } }  */
+.process .green_top{
+  max-width:25em;
+  margin:0 auto;
+  position:relative;
+  top:4em;
+}
+
+/* was: steps { ... } */
+.process .steps{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:2em;
+  margin-top:5em;
+  flex-wrap:wrap;           /* responsive */
+}
+
+/* was: step { ... } */
+.process .step{
+  flex:1;
+  min-width:200px;
+  position:relative;
+  top:3em;
+}
+
+/* was: circle { ... } */
+.process .circle{
+  width:70px;height:70px;
+  background:#fff;color:#4eb389;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 1em;
+  font-size:1.5rem;font-weight:700;
+}
+
+
+.block-6 .block-6-top{
+  
+  margin: 0 auto;
+  position: relative;
+  max-width: 35em;
+  text-align: center;
+  padding-top: 2em;  
+}
+
+.block-6-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  position:relative;
+  top: 2em;
+  flex-wrap: wrap;              /* ✅ allows wrapping */
+  justify-content: center;      /* centers cards horizontally */
+  gap: 2rem;                    /* adds spacing between cards */
+  padding: 4rem 1rem;
+  }
+  .block-6-bottom h3 {
+    max-width: 20em;
+  }
+/* top-plan */
+  .plan .top{
+    position: relative;
+    text-align: center;
+  }
+/* plan- bottom */
+ .plan .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 2em;
+  
+} 
+.plan .bottom div ul {
+  display: flex;             /* turns the UL into a flex container */
+  flex-direction: column;    /* stacks LIs vertically */
+  gap: 0.5em;                /* adds space between each LI */
+  padding: 0;
+  margin: 0;
+  list-style: none;          /* removes bullets */
+}
+.plan .bottom div h3{
+  width: 15em;
+}
+
+.plan .bottom div button {
+  display: block;           /* makes the button a block element */
+  margin: 1.5em auto 0;     /* centers horizontally */
+  background: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8em 1.6em;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.plan .bottom div{
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+border-radius: 2px;
+padding: 2em;
+margin: 0%;
+}
+
+
+@media (width < 30em) {
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    margin-top: 17em;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+
+
+
+    li {
+      background-color: gray;
+      padding: 1em 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+    nav button {
+        display: block;
+    }
+}
